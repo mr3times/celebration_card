@@ -2,6 +2,7 @@
 int appWidth, appHeight;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
+PImage poster;
 //
 void setup() {
   //Print & Println
@@ -24,10 +25,12 @@ void setup() {
   yRectQuit = appHeight*1/4;
   widthRectQuit = appWidth*1/2;
   heightRectQuit = appHeight*1/2;
+  poster = loadImage("../Saved Pictures/images.jpg");
   //
   //DIVs
   rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
   rect(xRectQuit, yRectQuit, widthRectQuit, heightRectQuit);
+  image(poster,xRectBackground, yRectBackground, widthRectBackground, heightRectBackground); 
   //rect(); //Image, foreground, near the top
   //rect(); //Copy and Paste this for all rect()s
   //
